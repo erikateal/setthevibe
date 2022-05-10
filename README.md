@@ -25,4 +25,4 @@ I built this project about a week after being introduced to JavaScript. I wanted
 
 ## What I Learned:
 
-I learned how to manipulate the DOM, as well as how to auto play audio and video.
+I learned how to manipulate the DOM, as well as how to auto play audio and video. Sound on! 🔊
