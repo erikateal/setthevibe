@@ -25,84 +25,102 @@
     border: 1px red solid;
   } */
 
-  body {
-    background-color: #395770a4;
-    font-family:'Cormorant Garamond', Courier;
-    font-style: italic;
-  }
+body {
+  background-color: #395770a4;
+  font-family:'Cormorant Garamond', Courier;
+  font-style: italic;
+}
   
-  h1 {
-    font-size: 5rem;
-    text-align: center;
-    margin-bottom: 0;
-  }
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 0;
+}
   
-  h2 {
-    text-align: center;
-    font-size: .8rem;
-    padding-bottom: 50px;
-    text-transform: uppercase;
-    font-style: normal;
+h2 {
+  text-align: center;
+  font-size: .8rem;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.vibe {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  height: 500px;
+  padding: 0 12%;
   }
 
-  .vibe {
-    display: flex;
-    justify-content: space-around;
-    height: 500px;
-    padding: 0 12%;
-  }
+.wheat, .ocean, .office, .curtain {
+  background-position: center;
+  height: 500px;
+  width: 700px;
+  border-radius: 45px;
+  opacity: .7;
+  display: hidden;
+}
 
-  .wheat, .ocean, .office, .curtain {
-    background-position: center;
-    height: 500px;
-    width: 300px;
-    border-radius: 45px;
-    opacity: .7;
-    display: hidden;
-  }
+.wheat:hover, .ocean:hover, .office:hover, .curtain:hover {
+  border: 5px solid rgba(128, 128, 128, .4);
+  opacity: .95;
+  display: hidden;
+}
 
-  .wheat:hover, .ocean:hover, .office:hover, .curtain:hover {
-    border: 5px solid rgba(128, 128, 128, .4);
-    opacity: .95;
-    display: hidden;
-  }
+.wheat {
+  background-image: url(assets/Gooseberry\ sorbet.jpeg);
+}
 
-  .wheat {
-    background-image: url(assets/Gooseberry\ sorbet.jpeg);
-  }
+.ocean {
+  background-image: url(assets/The\ 8\ Best\ Beaches\ on\ Koh\ Samui\ in\ Thailand\ -\ Northabroad.jpeg);
+}
 
-  .ocean {
-    background-image: url(assets/The\ 8\ Best\ Beaches\ on\ Koh\ Samui\ in\ Thailand\ -\ Northabroad.jpeg);
-  }
+.office{
+ background-image: url(assets/Coworking\ Space\ in\ London\ Southwark\ _\ Working\ From_.jpeg);
+}
 
-  .office{
-    background-image: url(assets/Coworking\ Space\ in\ London\ Southwark\ _\ Working\ From_.jpeg);
-  }
+.curtain {
+  background-image: url(assets/Blowing\ In\ The\ Wind.jpeg);
+  background-position: left;
+}
 
-  .curtain {
-    background-image: url(assets/Blowing\ In\ The\ Wind.jpeg);
-    background-position: left;
-  }
-
-  h3 {
-    font-size: .6rem;
-    text-align: center;
-    clear: both;
-    margin-top: 200px;
-    text-transform: uppercase;
-    font-style: normal;
-    display: hidden;
+h3 {
+  font-size: .6rem;
+  text-align: center;
+  clear: both;
+  margin-top: 100px;
+  text-transform: uppercase;
+  font-style: normal;
+  display: hidden;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 video {
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    z-index: -1;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 1200px){
+  .vibe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .wheat, .ocean, .office, .curtain{
+    display: flex;
+    width: 60%;
+    height: 1000px;
+  }
+  h3{
+    margin-top: 60px;
+  }
 }
