@@ -1,6 +1,6 @@
 <h1 align="center">Set the Vibe- Immersive Study Beats | <a href="https://setthevibe.netlify.app/">Live Site</a></h1>
 <div align="center">
-  <a href='https://ethodeus.github.io/pick-em-drinks-project/'>
+  <a href='https://github.com/erikateal/setthevibe'>
 	  <img src="https://github.com/erikateal/READMEAssets/blob/main/projectFiles/setthevibe.gif" width="80%" />
   </a>
 </div>
